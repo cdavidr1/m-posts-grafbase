@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    experimental: {
+        serverComponentsExternalPackages: ['cloudinary', 'graphql-request']
+    }
+
+}
 
 module.exports = nextConfig

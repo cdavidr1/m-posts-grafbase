@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer"
 import Nav from "@/components/Nav"
 import "./globals.css"
+import ConnectWeb3 from "@/components/ConnectWeb3"
 
 export const metadata = {
   title: 'Mary\'s Site',
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Nav />
         <main>
+          <ConnectWeb3 />
           {children}
         </main>
         <Footer />

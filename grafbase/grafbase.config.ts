@@ -11,10 +11,11 @@ const post = g.model('Post', {
   title: g.string(),
   slug: g.string().unique(),
   content: g.string().optional(),
+  image: g.url(),
   publishedAt: g.datetime().optional(),
   comments: g.relation(() => comment).optional().list().optional(),
   likes: g.int().default(0),
-  tags: g.string().optional().list().length({ max: 5 })
+  category: g.string().search()
 }).search()
 
 const comment = g.model('Comment', {

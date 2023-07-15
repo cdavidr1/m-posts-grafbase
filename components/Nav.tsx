@@ -12,7 +12,11 @@ const Nav = async () => {
         Middle
       </div>
       <div className='flex-1 flex justify-end border-4 border-red-400 gap-10'>
-        <section>right1</section>
+        <section>
+          <Link href='/admin-create'>
+            Create Post
+          </Link>
+        </section>
         <section>right2</section>
       </div>
     </nav>
