@@ -9,7 +9,6 @@ import { g, auth, config } from '@grafbase/sdk'
 
 const post = g.model('Post', {
   title: g.string(),
-  slug: g.string().unique(),
   content: g.string().optional(),
   image: g.url(),
   publishedAt: g.datetime().optional(),
