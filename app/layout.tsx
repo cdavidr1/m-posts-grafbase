@@ -4,8 +4,8 @@ import "./globals.css"
 import ConnectWeb3 from "@/components/ConnectWeb3"
 
 export const metadata = {
-  title: 'Mary\'s Site',
-  description: 'Discover the truth',
+  title: 'Blog Site',
+  description: 'Basic blog w/ web3',
 }
 
 export default function RootLayout({
