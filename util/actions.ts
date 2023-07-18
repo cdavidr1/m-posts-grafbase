@@ -51,6 +51,7 @@ export const createPost = async (form: PostForm) => {
 }
 
 export const fetchAllPosts = async (category?: string, endcursor?: string) => {
+    if (!category && !endcursor) return;
     return makeGraphQLRequest(postsQuery, { category, endcursor });
 }
 
